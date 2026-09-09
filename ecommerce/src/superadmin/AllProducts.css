@@ -1,0 +1,127 @@
+/* =====================================================
+   ALL PRODUCTS PAGE
+===================================================== */
+
+.all-products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.all-products-header h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  color: #111827;
+}
+
+.all-products-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+/* =====================================================
+   TABLE CONTAINER
+===================================================== */
+
+.all-products-table-container {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow-x: auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.all-products-table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+}
+
+.all-products-table th,
+.all-products-table td {
+  padding: 16px 18px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.all-products-table th {
+  background: #f9fafb;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.all-products-table td {
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.all-products-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.all-products-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* =====================================================
+   EMPTY MESSAGE
+===================================================== */
+
+.all-products-table td[colspan] {
+  text-align: center;
+  padding: 50px 20px;
+  color: #9ca3af;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+  .all-products-header h1 {
+    font-size: 24px;
+  }
+
+  .all-products-table-container {
+    overflow-x: auto;
+  }
+}
+.all-products-message,
+.all-products-error {
+  padding: 30px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.all-products-error {
+  color: #dc2626;
+}
+
+.product-table-image {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+.edit-product-button {
+  padding: 7px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #111827;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.edit-product-button:hover {
+  background: #374151;
+}

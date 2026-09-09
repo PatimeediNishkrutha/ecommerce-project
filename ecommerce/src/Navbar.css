@@ -1,0 +1,349 @@
+/* =====================================================
+   HEADER
+===================================================== */
+
+.main-header {
+  width: 100%;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 1000;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid #e5e7eb;
+
+  box-shadow:
+    0 4px 20px rgba(15, 23, 42, 0.06);
+}
+
+
+/* =====================================================
+   NAVBAR CONTAINER
+===================================================== */
+
+.navbar-container {
+  width: 100%;
+  max-width: 1280px;
+
+  height: 72px;
+
+  margin: 0 auto;
+
+  padding: 0 28px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.navbar-logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #172033;
+
+  text-decoration: none;
+
+  font-size: 22px;
+
+  font-weight: 800;
+
+  white-space: nowrap;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #4f46e5
+    );
+
+  border-radius: 11px;
+
+  font-size: 20px;
+
+  box-shadow:
+    0 5px 15px rgba(37, 99, 235, 0.22);
+}
+
+.navbar-logo:hover {
+  color: #2563eb;
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+.navbar-menu {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+}
+
+.navbar-menu a {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 9px 13px;
+
+  color: #475569;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  border-radius: 8px;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.navbar-menu a:hover {
+  color: #2563eb;
+
+  background: #eff6ff;
+}
+
+
+/* =====================================================
+   NAV ICON
+===================================================== */
+
+.nav-icon-link {
+  position: relative;
+}
+
+
+/* =====================================================
+   BADGE
+===================================================== */
+
+.nav-badge {
+  min-width: 19px;
+  height: 19px;
+
+  padding: 0 5px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+
+  top: 1px;
+  right: 1px;
+
+  background: #ef4444;
+
+  color: white;
+
+  border-radius: 50px;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  border: 2px solid white;
+}
+
+
+/* =====================================================
+   LOGOUT
+===================================================== */
+
+.navbar-logout {
+  margin-left: 5px;
+
+  padding: 9px 17px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #f1f5f9;
+
+  color: #475569;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.navbar-logout:hover {
+  background: #fee2e2;
+
+  color: #dc2626;
+}
+
+
+/* =====================================================
+   MOBILE BUTTON
+===================================================== */
+
+.navbar-toggle {
+  display: none;
+
+  width: 42px;
+  height: 42px;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 9px;
+
+  background: white;
+
+  color: #2563eb;
+
+  font-size: 22px;
+
+  cursor: pointer;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 850px) {
+
+  .navbar-container {
+    padding: 0 20px;
+  }
+
+  .navbar-menu {
+    gap: 2px;
+  }
+
+  .navbar-menu a {
+    padding: 8px 9px;
+
+    font-size: 13px;
+  }
+
+  .navbar-logout {
+    padding: 8px 12px;
+
+    font-size: 13px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .navbar-container {
+    height: 65px;
+
+    padding: 0 16px;
+  }
+
+  .navbar-logo {
+    font-size: 19px;
+  }
+
+  .logo-icon {
+    width: 36px;
+    height: 36px;
+
+    font-size: 18px;
+  }
+
+  .navbar-toggle {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-menu {
+    display: none;
+
+    position: absolute;
+
+    top: 65px;
+    left: 12px;
+    right: 12px;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 4px;
+
+    padding: 10px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    box-shadow:
+      0 15px 35px rgba(15, 23, 42, 0.12);
+  }
+
+  .navbar-menu-open {
+    display: flex;
+  }
+
+  .navbar-menu a {
+    width: 100%;
+
+    padding: 13px;
+
+    box-sizing: border-box;
+  }
+
+  .navbar-logout {
+    width: 100%;
+
+    margin: 4px 0 0;
+
+    padding: 12px;
+  }
+}

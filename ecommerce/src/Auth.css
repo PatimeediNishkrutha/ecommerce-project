@@ -1,0 +1,261 @@
+/* =========================
+   AUTH PAGE
+========================= */
+
+.auth-page {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px;
+
+  box-sizing: border-box;
+
+  background: linear-gradient(
+    135deg,
+    rgb(121, 121, 179),
+    #f8faff
+  );
+
+  font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   AUTH CARD
+========================= */
+
+.auth-card {
+  width: 100%;
+  max-width: 430px;
+
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 20px;
+
+  box-sizing: border-box;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+
+  text-align: left;
+}
+
+
+/* Signup card */
+
+.signup-card {
+  max-width: 480px;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.auth-logo {
+  width: 65px;
+  height: 65px;
+
+  margin: 0 auto 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #eef2ff;
+
+  border-radius: 50%;
+
+  font-size: 30px;
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+.auth-card h1 {
+  text-align: center;
+
+  color: #1e293b;
+
+  margin: 10px 0;
+}
+
+.auth-subtitle {
+  text-align: center;
+
+  color: #64748b;
+
+  margin-bottom: 30px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.auth-card form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.auth-card label {
+  font-weight: bold;
+
+  color: #334155;
+
+  margin-top: 8px;
+}
+
+.auth-card input {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 13px;
+
+  border: 1px solid #cbd5e1;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition: 0.3s;
+}
+
+.auth-card input:focus {
+  border-color: #4f46e5;
+
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+
+/* =========================
+   FORGOT PASSWORD
+========================= */
+
+.forgot-password {
+  text-align: right;
+
+  margin: 5px 0 15px;
+}
+
+.forgot-password a {
+  color: #4f46e5;
+
+  text-decoration: none;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.auth-btn {
+  margin-top: 15px;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #4f46e5;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.auth-btn:hover {
+  background: #3730a3;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 5px 15px rgba(79, 70, 229, 0.3);
+}
+
+
+/* =========================
+   LOGIN / SIGNUP SWITCH
+========================= */
+
+.switch-auth {
+  text-align: center;
+
+  color: #64748b;
+
+  margin-top: 25px;
+}
+
+.switch-auth a {
+  color: #4f46e5;
+
+  font-weight: bold;
+
+  text-decoration: none;
+}
+
+
+/* =========================
+   BACK HOME
+========================= */
+
+.back-home {
+  display: block;
+
+  text-align: center;
+
+  margin-top: 20px;
+
+  color: #475569;
+
+  text-decoration: none;
+
+  font-weight: bold;
+}
+
+.back-home:hover {
+  color: #4f46e5;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+  .auth-page {
+    padding: 15px;
+  }
+
+  .auth-card {
+    padding: 25px 20px;
+
+    border-radius: 15px;
+  }
+
+  .auth-card h1 {
+    font-size: 24px;
+  }
+
+}

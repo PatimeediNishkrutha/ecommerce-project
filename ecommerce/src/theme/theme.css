@@ -1,0 +1,2422 @@
+/* =========================================================
+   LIGHT THEME
+   ========================================================= */
+
+html.light-theme {
+  --theme-bg: #ffffff;
+  --theme-surface: #f8f9fa;
+  --theme-card: #ffffff;
+  --theme-text: #222222;
+  --theme-text-secondary: #666666;
+  --theme-border: #dddddd;
+  --theme-input-bg: #ffffff;
+  --theme-shadow: rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+html.dark-theme {
+  --theme-bg: #121212;
+  --theme-surface: #1e1e1e;
+  --theme-card: #242424;
+  --theme-text: #ffffff;
+  --theme-text-secondary: #bdbdbd;
+  --theme-border: #3a3a3a;
+  --theme-input-bg: #2a2a2a;
+  --theme-shadow: rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  background-color: var(--theme-bg);
+  color: var(--theme-text);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+
+/* =========================================================
+   DARK THEME - COMMON ELEMENTS
+   ========================================================= */
+
+html.dark-theme .app,
+html.dark-theme main,
+html.dark-theme section {
+  color: var(--theme-text);
+}
+
+
+/* Cards / panels */
+
+html.dark-theme .card,
+html.dark-theme .product-card,
+html.dark-theme .form-container,
+html.dark-theme .login-container,
+html.dark-theme .signup-container,
+html.dark-theme .modal,
+html.dark-theme .panel {
+  background-color: var(--theme-card);
+  color: var(--theme-text);
+  border-color: var(--theme-border);
+}
+
+
+/* Inputs */
+
+html.dark-theme input,
+html.dark-theme textarea,
+html.dark-theme select {
+  background-color: var(--theme-input-bg);
+  color: var(--theme-text);
+  border-color: var(--theme-border);
+}
+
+html.dark-theme input::placeholder,
+html.dark-theme textarea::placeholder {
+  color: var(--theme-text-secondary);
+}
+
+
+/* Text */
+
+html.dark-theme h1,
+html.dark-theme h2,
+html.dark-theme h3,
+html.dark-theme h4,
+html.dark-theme h5,
+html.dark-theme h6,
+html.dark-theme p,
+html.dark-theme label {
+  color: var(--theme-text);
+}
+
+
+/* =========================================================
+   TRANSITION
+   ========================================================= */
+
+body,
+button,
+input,
+textarea,
+select,
+.card,
+.product-card {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+/* =========================================================
+   MAIN APPLICATION BACKGROUND
+   ========================================================= */
+
+html.dark-theme body,
+html.dark-theme #root {
+  background-color: #121212 !important;
+}
+
+html.light-theme body,
+html.light-theme #root {
+  background-color: #ffffff !important;
+}
+/* =========================================================
+   HOME PAGE - DARK THEME
+   ========================================================= */
+
+html.dark-theme .home {
+  background: #121212 !important;
+}
+
+html.dark-theme .main-navbar {
+  background: #1e1e1e !important;
+  border-bottom-color: #333333 !important;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+html.dark-theme .navbar-links a {
+  color: #d1d5db !important;
+}
+
+html.dark-theme .navbar-links a:hover {
+  color: #ffffff !important;
+  background: #2a2a2a !important;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+html.dark-theme .home-hero {
+  background: linear-gradient(
+    135deg,
+    #182235,
+    #121212
+  ) !important;
+}
+
+html.dark-theme .hero-small-title {
+  background: #243b5c !important;
+  color: #93c5fd !important;
+}
+
+html.dark-theme .hero-content h1 {
+  color: #ffffff !important;
+}
+
+html.dark-theme .hero-content p {
+  color: #b8c1d1 !important;
+}
+
+html.dark-theme .hero-decoration {
+  background: linear-gradient(
+    145deg,
+    #243b5c,
+    #2e3154
+  ) !important;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.35) !important;
+}
+
+
+/* =========================================================
+   PRODUCTS SECTION
+   ========================================================= */
+
+html.dark-theme .products-section {
+  background: #121212 !important;
+}
+
+html.dark-theme .products-heading h2 {
+  color: #ffffff !important;
+}
+
+html.dark-theme .products-heading p {
+  color: #aeb7c5 !important;
+}
+
+html.dark-theme .product-count {
+  background: #1e3a5f !important;
+  color: #93c5fd !important;
+}
+
+
+/* =========================================================
+   PRODUCT CARD
+   ========================================================= */
+
+html.dark-theme .product-card {
+  background: #242424 !important;
+  border-color: #3a3a3a !important;
+
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.3) !important;
+}
+
+html.dark-theme .product-card:hover {
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.45) !important;
+}
+
+
+/* =========================================================
+   PRODUCT IMAGE AREA
+   ========================================================= */
+
+html.dark-theme .product-image-container {
+  background: #1b1b1b !important;
+}
+
+
+/* =========================================================
+   PRODUCT DETAILS
+   ========================================================= */
+
+html.dark-theme .product-details h3 {
+  color: #ffffff !important;
+}
+
+html.dark-theme .product-description {
+  color: #aeb7c5 !important;
+}
+
+
+/* =========================================================
+   QUANTITY CONTROL
+   ========================================================= */
+
+html.dark-theme .cart-quantity-control {
+  background: #2a2a2a !important;
+  border-color: #444444 !important;
+}
+
+html.dark-theme .quantity-button {
+  background: #243b5c !important;
+  color: #93c5fd !important;
+}
+
+html.dark-theme .quantity-number {
+  color: #ffffff !important;
+}
+
+
+/* =========================================================
+   LOW STOCK
+   ========================================================= */
+
+html.dark-theme .low-stock-text {
+  color: #fbbf24 !important;
+}
+
+
+/* =========================================================
+   OUT OF STOCK
+   ========================================================= */
+
+html.dark-theme .out-of-stock-button {
+  background: #333333 !important;
+  color: #a3a3a3 !important;
+}
+
+html.dark-theme .out-of-stock-label {
+  background: #4a2424 !important;
+  color: #fca5a5 !important;
+}
+
+
+/* =========================================================
+   EMPTY PRODUCTS
+   ========================================================= */
+
+html.dark-theme .no-products {
+  background: #242424 !important;
+  border-color: #3a3a3a !important;
+}
+
+html.dark-theme .no-products h2 {
+  color: #ffffff !important;
+}
+
+html.dark-theme .no-products p {
+  color: #aeb7c5 !important;
+}
+
+
+/* =========================================================
+   LOADING / ERROR
+   ========================================================= */
+
+html.dark-theme .products-loading,
+html.dark-theme .products-error {
+  background: #121212 !important;
+  color: #ffffff !important;
+}
+
+html.dark-theme .products-loading h2,
+html.dark-theme .products-error h2 {
+  color: #ffffff !important;
+}
+
+html.dark-theme .products-loading p,
+html.dark-theme .products-error p {
+  color: #aeb7c5 !important;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+html.dark-theme .main-footer {
+  background: #0b0f16 !important;
+}
+
+html.dark-theme .footer-content p,
+html.dark-theme .footer-bottom {
+  color: #9ca3af !important;
+}
+
+html.dark-theme .footer-links a {
+  color: #d1d5db !important;
+}
+
+html.dark-theme .footer-links a:hover {
+  color: #ffffff !important;
+}
+
+html.dark-theme .footer-bottom {
+  border-top-color: #374151 !important;
+}
+/* =========================================================
+   LOGIN PAGE - DARK THEME
+   ========================================================= */
+
+html.dark-theme .login-page {
+  background:
+    radial-gradient(
+      circle at top left,
+      #243b5c,
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #121212,
+      #182235
+    ) !important;
+}
+
+
+/* =========================================================
+   LOGIN CARD
+   ========================================================= */
+
+html.dark-theme .login-box {
+  background: #242424 !important;
+
+  border-color: #3a3a3a !important;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.45) !important;
+}
+
+
+/* =========================================================
+   LOGIN TEXT
+   ========================================================= */
+
+html.dark-theme .login-box h1 {
+  color: #ffffff !important;
+}
+
+html.dark-theme .login-box > p {
+  color: #bdbdbd !important;
+}
+
+
+/* =========================================================
+   LOGIN ERROR
+   ========================================================= */
+
+html.dark-theme .login-error {
+  background: #3b2024 !important;
+
+  border-color: #6b3038 !important;
+
+  color: #fca5a5 !important;
+}
+
+
+/* =========================================================
+   LOGIN LABEL
+   ========================================================= */
+
+html.dark-theme .login-group label {
+  color: #d1d5db !important;
+}
+
+
+/* =========================================================
+   LOGIN INPUT
+   ========================================================= */
+
+html.dark-theme .login-group input {
+  background: #2a2a2a !important;
+
+  border-color: #444444 !important;
+
+  color: #ffffff !important;
+}
+
+html.dark-theme .login-group input::placeholder {
+  color: #9ca3af !important;
+}
+
+html.dark-theme .login-group input:focus {
+  border-color: #60a5fa !important;
+
+  box-shadow:
+    0 0 0 3px rgba(96, 165, 250, 0.15) !important;
+}
+
+
+/* =========================================================
+   LOGIN BUTTON
+   ========================================================= */
+
+html.dark-theme .login-box form button {
+  background: #2563eb !important;
+
+  color: #ffffff !important;
+}
+
+html.dark-theme .login-box form button:hover {
+  background: #1d4ed8 !important;
+}
+
+html.dark-theme .login-box form button:disabled {
+  background: #4b6fa8 !important;
+
+  color: #d1d5db !important;
+}
+
+
+/* =========================================================
+   SIGNUP LINK
+   ========================================================= */
+
+html.dark-theme .signup-text {
+  color: #bdbdbd !important;
+}
+
+html.dark-theme .signup-text a {
+  color: #60a5fa !important;
+}
+/* =========================================================
+   SIGNUP PAGE - DARK THEME
+   ========================================================= */
+
+html.dark-theme .signup-page {
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(37, 99, 235, 0.22),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 90% 90%,
+      rgba(79, 70, 229, 0.20),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #121212,
+      #182235,
+      #15182a
+    ) !important;
+}
+
+
+/* =========================================================
+   SIGNUP CARD
+   ========================================================= */
+
+html.dark-theme .signup-card {
+  background: #242424 !important;
+
+  border-color: #3a3a3a !important;
+
+  box-shadow:
+    0 20px 55px rgba(0, 0, 0, 0.45) !important;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+html.dark-theme .signup-logo {
+  background:
+    linear-gradient(
+      135deg,
+      #243b5c,
+      #2e3154
+    ) !important;
+
+  border-color: #3a4f70 !important;
+
+  box-shadow:
+    0 8px 22px rgba(0, 0, 0, 0.35) !important;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+html.dark-theme .signup-card h1 {
+  color: #ffffff !important;
+}
+
+
+/* =========================================================
+   SUBTITLE
+   ========================================================= */
+
+html.dark-theme .signup-subtitle {
+  color: #bdbdbd !important;
+}
+
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+html.dark-theme .signup-form label {
+  color: #d1d5db !important;
+}
+
+
+/* =========================================================
+   INPUT
+   ========================================================= */
+
+html.dark-theme .signup-form input {
+  background: #2a2a2a !important;
+
+  border-color: #444444 !important;
+
+  color: #ffffff !important;
+}
+
+
+/* PLACEHOLDER */
+
+html.dark-theme .signup-form input::placeholder {
+  color: #9ca3af !important;
+}
+
+
+/* INPUT FOCUS */
+
+html.dark-theme .signup-form input:focus {
+  border-color: #60a5fa !important;
+
+  box-shadow:
+    0 0 0 3px rgba(96, 165, 250, 0.15) !important;
+}
+
+
+/* =========================================================
+   SIGNUP BUTTON
+   ========================================================= */
+
+html.dark-theme .signup-button {
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #4f46e5
+    ) !important;
+
+  color: #ffffff !important;
+}
+
+html.dark-theme .signup-button:hover {
+  background:
+    linear-gradient(
+      135deg,
+      #1d4ed8,
+      #4338ca
+    ) !important;
+}
+
+html.dark-theme .signup-button:disabled {
+  background: #4b6fa8 !important;
+
+  color: #d1d5db !important;
+}
+
+
+/* =========================================================
+   LOGIN SECTION
+   ========================================================= */
+
+html.dark-theme .signup-login {
+  color: #bdbdbd !important;
+}
+
+html.dark-theme .signup-login a {
+  color: #60a5fa !important;
+}
+
+html.dark-theme .signup-login a:hover {
+  color: #93c5fd !important;
+}
+
+
+/* =========================================================
+   BACK HOME
+   ========================================================= */
+
+html.dark-theme .signup-back-home {
+  background: #2a2a2a !important;
+
+  border-color: #444444 !important;
+
+  color: #bdbdbd !important;
+}
+
+html.dark-theme .signup-back-home:hover {
+  background: #243b5c !important;
+
+  border-color: #3b82f6 !important;
+
+  color: #93c5fd !important;
+}
+/* =========================================================
+   CART PAGE - DARK THEME
+   ========================================================= */
+
+html.dark-theme .cart-page {
+  background:
+    linear-gradient(
+      135deg,
+      #121212,
+      #182235
+    ) !important;
+}
+
+
+/* =========================================================
+   CART HEADER
+   ========================================================= */
+
+html.dark-theme .cart-page h1 {
+  color: #ffffff !important;
+}
+
+
+/* =========================================================
+   CART ITEM
+   ========================================================= */
+
+html.dark-theme .cart-item {
+  background: #242424 !important;
+
+  border-color: #3a3a3a !important;
+
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.3) !important;
+}
+
+html.dark-theme .cart-item:hover {
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.45) !important;
+}
+
+
+/* =========================================================
+   CART IMAGE
+   ========================================================= */
+
+html.dark-theme .cart-item img {
+  background: #1b1b1b !important;
+}
+
+
+/* =========================================================
+   CART DETAILS
+   ========================================================= */
+
+html.dark-theme .cart-details h2 {
+  color: #ffffff !important;
+}
+
+html.dark-theme .cart-details p {
+  color: #bdbdbd !important;
+}
+
+
+/* =========================================================
+   QUANTITY
+   ========================================================= */
+
+html.dark-theme .quantity button {
+  background: #243b5c !important;
+
+  color: #93c5fd !important;
+}
+
+html.dark-theme .quantity button:hover {
+  background: #304b70 !important;
+}
+
+html.dark-theme .quantity span {
+  color: #ffffff !important;
+}
+
+
+/* =========================================================
+   REMOVE BUTTON
+   ========================================================= */
+
+html.dark-theme .remove-btn {
+  background: #3b2024 !important;
+
+  color: #fca5a5 !important;
+}
+
+html.dark-theme .remove-btn:hover {
+  background: #4a2424 !important;
+}
+
+
+/* =========================================================
+   CART TOTAL
+   ========================================================= */
+
+html.dark-theme .cart-total {
+  background: #242424 !important;
+
+  border-color: #3a3a3a !important;
+
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.3) !important;
+}
+
+html.dark-theme .cart-total h2 {
+  color: #ffffff !important;
+}
+
+
+/* =========================================================
+   CHECKOUT
+   ========================================================= */
+
+html.dark-theme .checkout-btn {
+  background: #16a34a !important;
+
+  color: #ffffff !important;
+}
+
+html.dark-theme .checkout-btn:hover {
+  background: #15803d !important;
+}
+/* =====================================================
+   WISHLIST - DARK THEME
+===================================================== */
+
+html.dark-theme .wishlist-page {
+  background: var(--theme-background);
+  color: var(--theme-text);
+}
+
+html.dark-theme .wishlist-navbar {
+  background: var(--theme-card);
+  border-bottom-color: var(--theme-border);
+}
+
+html.dark-theme .wishlist-nav-links a {
+  color: var(--theme-text-secondary);
+}
+
+html.dark-theme .wishlist-nav-links a:hover,
+html.dark-theme .wishlist-nav-links .wishlist-active {
+  color: #60a5fa;
+  background: #1e3a5f;
+}
+
+html.dark-theme .wishlist-title h1 {
+  color: var(--theme-text);
+}
+
+html.dark-theme .wishlist-title p {
+  color: var(--theme-text-secondary);
+}
+
+html.dark-theme .wishlist-card {
+  background: var(--theme-card);
+  border-color: var(--theme-border);
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.25);
+}
+
+html.dark-theme .wishlist-card:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+html.dark-theme .wishlist-image {
+  background: var(--theme-surface);
+}
+
+html.dark-theme .wishlist-details h2 {
+  color: var(--theme-text);
+}
+
+html.dark-theme .wishlist-price {
+  color: #60a5fa;
+}
+
+html.dark-theme .continue-shopping {
+  background: #1e3a5f;
+  color: #60a5fa;
+}
+
+html.dark-theme .continue-shopping:hover {
+  background: #263f63;
+}
+
+html.dark-theme .empty-wishlist h2 {
+  color: var(--theme-text);
+}
+
+html.dark-theme .empty-wishlist p {
+  color: var(--theme-text-secondary);
+}
+/* =====================================================
+   BILLING PAGE - DARK THEME
+===================================================== */
+
+/* PAGE */
+
+html.dark-theme .billing-page {
+  background: var(--theme-background);
+  color: var(--theme-text);
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+html.dark-theme .billing-header {
+  background: #1e1e1e;
+  color: var(--theme-text);
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+html.dark-theme .back-btn {
+  background: #2a2a2a;
+  color: var(--theme-text);
+
+  border: 1px solid var(--theme-border);
+}
+
+html.dark-theme .back-btn:hover {
+  background: #2563eb;
+  color: white;
+}
+
+
+/* =====================================================
+   BILLING CARDS
+===================================================== */
+
+html.dark-theme .order-summary,
+html.dark-theme .customer-details {
+  background: var(--theme-card);
+
+  border-color: var(--theme-border);
+
+  color: var(--theme-text);
+
+  box-shadow:
+    0 6px 22px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =====================================================
+   CARD HEADINGS
+===================================================== */
+
+html.dark-theme .order-summary h2,
+html.dark-theme .customer-details h2 {
+  color: var(--theme-text);
+
+  border-bottom-color: var(--theme-border);
+}
+
+
+/* =====================================================
+   BILLING PRODUCT
+===================================================== */
+
+html.dark-theme .billing-item {
+  border-bottom-color: var(--theme-border);
+}
+
+html.dark-theme .billing-product img {
+  background: var(--theme-surface);
+}
+
+html.dark-theme .billing-product h3 {
+  color: var(--theme-text);
+}
+
+html.dark-theme .billing-product p {
+  color: var(--theme-text-secondary);
+}
+
+html.dark-theme .billing-item strong {
+  color: #60a5fa;
+}
+
+
+/* =====================================================
+   BILL ROW
+===================================================== */
+
+html.dark-theme .bill-row {
+  color: var(--theme-text-secondary);
+}
+
+
+/* =====================================================
+   TOTAL
+===================================================== */
+
+html.dark-theme .bill-total {
+  color: var(--theme-text);
+
+  border-top-color: var(--theme-border);
+}
+
+html.dark-theme .bill-total span:last-child {
+  color: #60a5fa;
+}
+
+
+/* =====================================================
+   INPUTS
+===================================================== */
+
+html.dark-theme .customer-details input,
+html.dark-theme .customer-details textarea {
+  background: var(--theme-input);
+
+  color: var(--theme-text);
+
+  border-color: var(--theme-border);
+}
+
+html.dark-theme .customer-details input::placeholder,
+html.dark-theme .customer-details textarea::placeholder {
+  color: var(--theme-text-secondary);
+}
+
+html.dark-theme .customer-details input:focus,
+html.dark-theme .customer-details textarea:focus {
+  border-color: #60a5fa;
+
+  box-shadow:
+    0 0 0 3px rgba(96, 165, 250, 0.15);
+}
+
+
+/* =====================================================
+   EMPTY BILLING
+===================================================== */
+
+html.dark-theme .empty-billing {
+  background: var(--theme-card);
+
+  color: var(--theme-text);
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+html.dark-theme .empty-billing h2 {
+  color: var(--theme-text);
+}
+/* =====================================================
+   THEME APPLICATION
+===================================================== */
+
+/* PAGE BACKGROUNDS */
+
+html.light-theme .home,
+html.light-theme .login-page,
+html.light-theme .signup-page,
+html.light-theme .cart-page,
+html.light-theme .wishlist-page,
+html.light-theme .billing-page,
+html.light-theme .admin-layout {
+  background-color: var(--theme-background);
+  color: var(--theme-text);
+}
+
+html.dark-theme .home,
+html.dark-theme .login-page,
+html.dark-theme .signup-page,
+html.dark-theme .cart-page,
+html.dark-theme .wishlist-page,
+html.dark-theme .billing-page,
+html.dark-theme .admin-layout {
+  background-color: var(--theme-background);
+  color: var(--theme-text);
+}
+
+
+/* CARDS */
+
+html.dark-theme .product-card,
+html.dark-theme .login-box,
+html.dark-theme .signup-card,
+html.dark-theme .cart-item,
+html.dark-theme .cart-total,
+html.dark-theme .wishlist-card,
+html.dark-theme .billing-header,
+html.dark-theme .order-summary,
+html.dark-theme .customer-details,
+html.dark-theme .empty-billing,
+html.dark-theme .dashboard-card,
+html.dark-theme .dashboard-stat-card {
+  background-color: var(--theme-card);
+  color: var(--theme-text);
+  border-color: var(--theme-border);
+}
+
+
+/* TEXT */
+
+html.dark-theme h1,
+html.dark-theme h2,
+html.dark-theme h3,
+html.dark-theme h4,
+html.dark-theme h5,
+html.dark-theme h6,
+html.dark-theme p,
+html.dark-theme span,
+html.dark-theme label,
+html.dark-theme strong,
+html.dark-theme small {
+  color: var(--theme-text);
+}
+
+
+/* SECONDARY TEXT */
+
+html.dark-theme .product-description,
+html.dark-theme .products-heading p,
+html.dark-theme .hero-content p,
+html.dark-theme .login-box > p,
+html.dark-theme .signup-subtitle,
+html.dark-theme .signup-login,
+html.dark-theme .cart-details p,
+html.dark-theme .billing-product p {
+  color: var(--theme-text-secondary);
+}
+
+
+/* INPUTS */
+
+html.dark-theme input,
+html.dark-theme textarea,
+html.dark-theme select {
+  background-color: var(--theme-input);
+  color: var(--theme-text);
+  border-color: var(--theme-border);
+}
+
+
+/* ADMIN MAIN */
+
+html.dark-theme .admin-main,
+html.dark-theme .admin-content {
+  background-color: var(--theme-background);
+  color: var(--theme-text);
+}
+
+
+/* ADMIN CARDS */
+
+html.dark-theme .dashboard-card,
+html.dark-theme .dashboard-stat-card {
+  background-color: var(--theme-card);
+  border-color: var(--theme-border);
+  color: var(--theme-text);
+}
+
+
+/* ADMIN TABLE */
+
+html.dark-theme .orders-table-wrapper {
+  background-color: var(--theme-card);
+  color: var(--theme-text);
+}
+
+html.dark-theme .orders-table {
+  color: var(--theme-text);
+}
+
+html.dark-theme .orders-table th,
+html.dark-theme .orders-table td {
+  border-color: var(--theme-border);
+  color: var(--theme-text);
+}
+
+
+/* ADMIN OVERVIEW */
+
+html.dark-theme .overview-item {
+  border-color: var(--theme-border);
+}
+
+html.dark-theme .overview-item strong,
+html.dark-theme .overview-item small,
+html.dark-theme .overview-item b {
+  color: var(--theme-text);
+}
+/* =====================================================
+   DARK THEME - MUI ICONS
+===================================================== */
+
+html.dark-theme .admin-layout svg,
+html.dark-theme .admin-layout .MuiSvgIcon-root {
+  color: #ffffff !important;
+  fill: currentColor;
+}
+
+
+/* Dashboard stat icons */
+
+html.dark-theme .stat-icon svg,
+html.dark-theme .stat-icon .MuiSvgIcon-root {
+  color: #60a5fa !important;
+}
+
+
+/* Store overview icons */
+
+html.dark-theme .overview-icon svg,
+html.dark-theme .overview-icon .MuiSvgIcon-root {
+  color: #60a5fa !important;
+}
+
+
+/* Navbar icons */
+
+html.dark-theme .admin-navbar svg,
+html.dark-theme .admin-navbar .MuiSvgIcon-root {
+  color: #ffffff !important;
+}
+
+
+/* Sidebar icons */
+
+html.dark-theme .admin-sidebar svg,
+html.dark-theme .admin-sidebar .MuiSvgIcon-root {
+  color: #ffffff !important;
+}
+/* =====================================================
+   DARK THEME - ADMIN DASHBOARD STOCK VALUES
+===================================================== */
+
+html.dark-theme .admin-dashboard {
+  color: var(--theme-text);
+}
+
+/* Stock numbers / values */
+html.dark-theme .admin-dashboard
+.stock-value,
+html.dark-theme .admin-dashboard
+.stock-count,
+html.dark-theme .product-stock,
+html.dark-theme .stock-number {
+  color: #ffffff !important;
+}
+
+/* Product information */
+html.dark-theme .admin-dashboard
+.product-name,
+html.dark-theme .admin-dashboard
+.product-details,
+html.dark-theme .admin-dashboard
+.product-info {
+  color: var(--theme-text) !important;
+}
+
+/* Secondary text */
+html.dark-theme .admin-dashboard
+.stock-label,
+html.dark-theme .admin-dashboard
+.product-description {
+  color: var(--theme-text-secondary) !important;
+}
+html.dark-theme .stock-available {
+  color:blue !important;
+}
+
+html.dark-theme .stock-out {
+  color: #fca5a5 !important;
+}
+/* =====================================================
+   ADMIN LOGIN - DARK THEME
+===================================================== */
+
+html.dark-theme .admin-login-container {
+  background:
+    radial-gradient(
+      circle at top left,
+      #243b5c,
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #121212,
+      #182235
+    ) !important;
+}
+
+html.dark-theme .admin-login-box {
+  background: #242424 !important;
+  border-color: #3a3a3a !important;
+  color: #ffffff !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45) !important;
+}
+html.dark-theme .admin-login-box h2 {
+  color: #ffffff !important;
+}
+
+html.dark-theme .admin-login-subtitle {
+  color: #bdbdbd !important;
+}
+
+html.dark-theme .admin-login-box .form-group label {
+  color: #d1d5db !important;
+}
+
+html.dark-theme .admin-login-message {
+  color: #fca5a5 !important;
+}
+html.dark-theme .admin-login-box .form-group input {
+  background: #2a2a2a !important;
+  color: #ffffff !important;
+  border-color: #444444 !important;
+}
+
+html.dark-theme .admin-login-box .form-group input::placeholder {
+  color: #9ca3af !important;
+}
+
+html.dark-theme .admin-login-box .form-group input:focus {
+  border-color: #60a5fa !important;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.15) !important;
+}
+/* =====================================================
+   ADMIN LOGIN - BUTTON & LINKS
+===================================================== */
+
+html.dark-theme .admin-login-button {
+  background: #2563eb !important;
+  color: #ffffff !important;
+}
+
+html.dark-theme .admin-login-button:hover {
+  background: #1d4ed8 !important;
+}
+
+html.dark-theme .admin-login-button:disabled {
+  background: #4b6fa8 !important;
+  color: #d1d5db !important;
+}
+
+html.dark-theme .admin-signup-link,
+html.dark-theme .user-login-link {
+  color: #bdbdbd !important;
+}
+
+html.dark-theme .admin-signup-link a,
+html.dark-theme .user-login-link a {
+  color: #60a5fa !important;
+}
+
+html.dark-theme .admin-signup-link a:hover,
+html.dark-theme .user-login-link a:hover {
+  color: #93c5fd !important;
+}
+/* =====================================================
+   ADMIN SIGNUP - DARK THEME
+===================================================== */
+
+html.dark-theme .admin-signup-container {
+  background: linear-gradient(
+    135deg,
+    #121212,
+    #182235
+  ) !important;
+}
+
+html.dark-theme .admin-signup-box {
+  background: #242424 !important;
+  color: #ffffff !important;
+  border-color: #3a3a3a !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45) !important;
+}
+
+html.dark-theme .admin-signup-header h1 {
+  color: #ffffff !important;
+}
+
+html.dark-theme .admin-signup-header p {
+  color: #bdbdbd !important;
+}
+
+html.dark-theme .admin-signup-icon {
+  background: #243b5c !important;
+}
+
+html.dark-theme .admin-signup-group label {
+  color: #d1d5db !important;
+}
+
+html.dark-theme .admin-signup-group input {
+  background: #2a2a2a !important;
+  color: #ffffff !important;
+  border-color: #444444 !important;
+}
+
+html.dark-theme .admin-signup-group input::placeholder {
+  color: #9ca3af !important;
+}
+
+html.dark-theme .admin-signup-group input:focus {
+  border-color: #60a5fa !important;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.15) !important;
+}
+
+html.dark-theme .admin-signup-btn {
+  background: #2563eb !important;
+  color: #ffffff !important;
+}
+
+html.dark-theme .admin-signup-btn:hover {
+  background: #1d4ed8 !important;
+}
+
+html.dark-theme .admin-signup-btn:disabled {
+  background: #4b6fa8 !important;
+}
+
+html.dark-theme .admin-login-link {
+  border-top-color: #3a3a3a !important;
+}
+
+html.dark-theme .admin-login-link p {
+  color: #bdbdbd !important;
+}
+
+html.dark-theme .admin-login-link a {
+  color: #60a5fa !important;
+}
+
+html.dark-theme .admin-back-link a {
+  color: #9ca3af !important;
+}
+
+html.dark-theme .admin-back-link a:hover {
+  color: #60a5fa !important;
+}
+/* =====================================================
+   SUPER ADMIN LOGIN - THEME
+   Matches ThemeContext.jsx
+===================================================== */
+
+
+/* =====================================================
+   LIGHT THEME
+===================================================== */
+
+html.light-theme .super-admin-login-page {
+  background: linear-gradient(
+    135deg,
+    #f4f7fb,
+    #e8eef7
+  );
+}
+
+html.light-theme .super-admin-login-card {
+  background: #ffffff;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+html.light-theme .super-admin-icon {
+  background: #111827;
+  color: #ffffff;
+}
+
+html.light-theme .super-admin-login-header h2 {
+  color: #111827;
+}
+
+html.light-theme .super-admin-login-header p {
+  color: #6b7280;
+}
+
+html.light-theme .super-admin-input-group label {
+  color: #374151;
+}
+
+html.light-theme .super-admin-input-group input {
+  background: #ffffff;
+  color: #111827;
+  border-color: #d1d5db;
+}
+
+html.light-theme .super-admin-input-group input::placeholder {
+  color: #9ca3af;
+}
+
+html.light-theme .super-admin-login-button {
+  background: #111827;
+  color: #ffffff;
+}
+
+html.light-theme .super-admin-login-button:hover {
+  background: #1f2937;
+}
+
+html.light-theme .super-admin-message {
+  color: #dc2626;
+}
+
+
+/* =====================================================
+   DARK THEME
+===================================================== */
+
+html.dark-theme .super-admin-login-page {
+  background: linear-gradient(
+    135deg,
+    #020617,
+    #0f172a
+  );
+}
+
+html.dark-theme .super-admin-login-card {
+  background: #111827;
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.55);
+}
+
+html.dark-theme .super-admin-icon {
+  background: #1f2937;
+  color: #ffffff;
+}
+
+html.dark-theme .super-admin-login-header h2 {
+  color: #f9fafb;
+}
+
+html.dark-theme .super-admin-login-header p {
+  color: #9ca3af;
+}
+
+html.dark-theme .super-admin-input-group label {
+  color: #e5e7eb;
+}
+
+html.dark-theme .super-admin-input-group input {
+  background: #1f2937;
+  color: #f9fafb;
+  border-color: #374151;
+}
+
+html.dark-theme .super-admin-input-group input::placeholder {
+  color: #9ca3af;
+}
+
+html.dark-theme .super-admin-input-group input:focus {
+  border-color: #9ca3af;
+  box-shadow:
+    0 0 0 3px rgba(156, 163, 175, 0.12);
+}
+
+html.dark-theme .super-admin-login-button {
+  background: #f9fafb;
+  color: #111827;
+}
+
+html.dark-theme .super-admin-login-button:hover {
+  background: #e5e7eb;
+}
+
+html.dark-theme .super-admin-message {
+  color: #f87171;
+}
+/* =========================================================
+   SUPER ADMIN DASHBOARD - THEME TOGGLE
+   ========================================================= */
+
+.super-admin-layout .theme-toggle {
+  position: fixed !important;
+
+  top: 20px !important;
+  right: 25px !important;
+
+  width: 46px !important;
+  height: 46px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  border: 1px solid var(--theme-border) !important;
+  border-radius: 50% !important;
+
+  background: var(--theme-card) !important;
+  color: var(--theme-text) !important;
+
+  cursor: pointer !important;
+
+  font-size: 22px !important;
+
+  padding: 0 !important;
+
+  box-shadow:
+    0 4px 15px var(--theme-shadow) !important;
+
+  z-index: 99999 !important;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.3s ease !important;
+}
+
+.super-admin-layout .theme-toggle:hover {
+  transform: scale(1.08) !important;
+}
+
+
+/* =========================================================
+   LIGHT MODE TOGGLE
+   ========================================================= */
+
+html.light-theme .super-admin-layout .theme-toggle {
+  background: #ffffff !important;
+  color: #111827 !important;
+  border-color: #d1d5db !important;
+}
+
+
+/* =========================================================
+   DARK MODE TOGGLE
+   ========================================================= */
+
+html.dark-theme .super-admin-layout .theme-toggle {
+  background: #242424 !important;
+  color: #ffffff !important;
+  border-color: #444444 !important;
+}
+
+
+/* =========================================================
+   TOGGLE HOVER
+   ========================================================= */
+
+html.light-theme .super-admin-layout .theme-toggle:hover {
+  background: #f3f4f6 !important;
+}
+
+html.dark-theme .super-admin-layout .theme-toggle:hover {
+  background: #333333 !important;
+}
+/* =========================================================
+   SUPER ADMIN DASHBOARD - COMPLETE THEME
+   ========================================================= */
+
+/* =========================================================
+   LIGHT THEME
+   ========================================================= */
+
+html.light-theme .super-admin-layout {
+  background: #f4f6f9 !important;
+  color: #111827 !important;
+}
+
+html.light-theme .super-admin-main-content {
+  background: #f4f6f9 !important;
+  color: #111827 !important;
+}
+
+html.light-theme .super-admin-main-content h1 {
+  color: #111827 !important;
+}
+
+html.light-theme .super-admin-main-content p {
+  color: #6b7280 !important;
+}
+
+html.light-theme .super-admin-stat-card {
+  background: #ffffff !important;
+  color: #111827 !important;
+  border-color: #e5e7eb !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07) !important;
+}
+
+html.light-theme .super-admin-stat-card h3 {
+  color: #6b7280 !important;
+}
+
+html.light-theme .super-admin-stat-card strong {
+  color: #111827 !important;
+}
+
+html.light-theme .super-admin-stat-card .stat-icon {
+  background: #f3f4f6 !important;
+  color: #2563eb !important;
+}
+
+
+/* =========================================================
+   DARK THEME - PAGE
+   ========================================================= */
+
+html.dark-theme .super-admin-layout {
+  background: #121212 !important;
+  color: #ffffff !important;
+}
+
+html.dark-theme .super-admin-main-content {
+  background: #121212 !important;
+  color: #ffffff !important;
+}
+
+
+/* =========================================================
+   DARK THEME - HEADER
+   ========================================================= */
+
+html.dark-theme .super-admin-main-content h1 {
+  color: #ffffff !important;
+}
+
+html.dark-theme .super-admin-main-content p {
+  color: #bdbdbd !important;
+}
+
+
+/* =========================================================
+   DARK THEME - STATISTICS CONTAINER
+   ========================================================= */
+
+html.dark-theme .super-admin-stats {
+  background: transparent !important;
+}
+
+
+/* =========================================================
+   DARK THEME - STAT CARDS
+   ========================================================= */
+
+html.dark-theme .super-admin-stat-card {
+  background: #242424 !important;
+
+  color: #ffffff !important;
+
+  border: 1px solid #3a3a3a !important;
+
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.40) !important;
+}
+
+html.dark-theme .super-admin-stat-card:hover {
+  background: #292929 !important;
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.55) !important;
+}
+
+
+/* =========================================================
+   DARK THEME - CARD HEADINGS
+   ========================================================= */
+
+html.dark-theme .super-admin-stat-card h3 {
+  color: #bdbdbd !important;
+}
+
+
+/* =========================================================
+   DARK THEME - CARD VALUES
+   ========================================================= */
+
+html.dark-theme .super-admin-stat-card strong {
+  color: #ffffff !important;
+}
+
+
+/* =========================================================
+   DARK THEME - ICON BACKGROUND
+   ========================================================= */
+
+html.dark-theme .super-admin-stat-card .stat-icon {
+  background: #1e3a5f !important;
+  color: #60a5fa !important;
+}
+
+
+/* =========================================================
+   DARK THEME - MUI ICONS
+   ========================================================= */
+
+html.dark-theme .super-admin-stat-card .MuiSvgIcon-root {
+  color: #60a5fa !important;
+}
+
+
+/* =========================================================
+   DARK THEME - SIDEBAR AREA
+   ========================================================= */
+
+html.dark-theme .super-admin-layout .super-admin-sidebar {
+  background: #1e1e1e !important;
+  color: #ffffff !important;
+}
+
+
+/* =========================================================
+   DARK THEME - COMMON SIDEBAR TEXT
+   ========================================================= */
+
+html.dark-theme .super-admin-layout
+.super-admin-sidebar h1,
+
+html.dark-theme .super-admin-layout
+.super-admin-sidebar h2,
+
+html.dark-theme .super-admin-layout
+.super-admin-sidebar h3,
+
+html.dark-theme .super-admin-layout
+.super-admin-sidebar p,
+
+html.dark-theme .super-admin-layout
+.super-admin-sidebar span,
+
+html.dark-theme .super-admin-layout
+.super-admin-sidebar a {
+  color: #ffffff !important;
+}
+
+
+/* =========================================================
+   DARK THEME - SIDEBAR ICONS
+   ========================================================= */
+
+html.dark-theme .super-admin-layout
+.super-admin-sidebar .MuiSvgIcon-root {
+  color: #ffffff !important;
+}
+
+
+/* =========================================================
+   SUPER ADMIN DASHBOARD - TOGGLE
+   ========================================================= */
+
+.super-admin-layout .theme-toggle {
+  position: fixed !important;
+
+  top: 20px !important;
+  right: 25px !important;
+
+  width: 46px !important;
+  height: 46px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  padding: 0 !important;
+
+  border-radius: 50% !important;
+
+  cursor: pointer !important;
+
+  font-size: 22px !important;
+
+  z-index: 99999 !important;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.2s ease !important;
+}
+
+
+/* LIGHT TOGGLE */
+
+html.light-theme .super-admin-layout .theme-toggle {
+  background: #ffffff !important;
+  color: #111827 !important;
+  border: 1px solid #d1d5db !important;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.12) !important;
+}
+
+
+/* DARK TOGGLE */
+
+html.dark-theme .super-admin-layout .theme-toggle {
+  background: #242424 !important;
+  color: #ffffff !important;
+  border: 1px solid #444444 !important;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.50) !important;
+}
+
+
+/* TOGGLE HOVER */
+
+html.light-theme .super-admin-layout .theme-toggle:hover {
+  background: #f3f4f6 !important;
+}
+
+html.dark-theme .super-admin-layout .theme-toggle:hover {
+  background: #333333 !important;
+}
+
+.super-admin-layout .theme-toggle:hover {
+  transform: scale(1.08) !important;
+}
+/* =====================================================
+   SUPER ADMIN ORDERS - THEME
+===================================================== */
+
+/* =========================
+   LIGHT THEME
+========================= */
+
+html.light-theme .super-admin-orders-page {
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+html.light-theme .super-admin-orders-header h1 {
+  color: #1f2937;
+}
+
+html.light-theme .super-admin-orders-header p {
+  color: #6b7280;
+}
+
+html.light-theme .super-admin-order-card {
+  background: #ffffff;
+  border-color: #e5e7eb;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+html.light-theme .super-admin-order-header {
+  border-bottom-color: #e5e7eb;
+}
+
+html.light-theme .super-admin-order-header h2 {
+  color: #111827;
+}
+
+html.light-theme .super-admin-order-id {
+  color: #6b7280;
+}
+
+html.light-theme .super-admin-order-status {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+html.light-theme .super-admin-order-section {
+  background: #f9fafb;
+}
+
+html.light-theme .super-admin-order-section h3 {
+  color: #111827;
+}
+
+html.light-theme .super-admin-order-section p {
+  color: #4b5563;
+}
+
+html.light-theme .super-admin-order-section strong {
+  color: #111827;
+}
+
+html.light-theme .super-admin-order-products h3 {
+  color: #111827;
+}
+
+html.light-theme .super-admin-product {
+  background: #f9fafb;
+}
+
+html.light-theme .super-admin-product-info h4 {
+  color: #111827;
+}
+
+html.light-theme .super-admin-product-info p {
+  color: #6b7280;
+}
+
+html.light-theme .super-admin-order-footer {
+  border-top-color: #e5e7eb;
+}
+
+html.light-theme .super-admin-order-total {
+  color: #111827;
+}
+
+html.light-theme .super-admin-order-date {
+  color: #6b7280;
+}
+
+html.light-theme .super-admin-no-orders {
+  background: #ffffff;
+  color: #6b7280;
+  border-color: #e5e7eb;
+}
+
+
+/* =========================
+   DARK THEME
+========================= */
+
+html.dark-theme .super-admin-orders-page {
+  background: #121212 !important;
+  color: #ffffff !important;
+}
+
+html.dark-theme .super-admin-orders-header h1 {
+  color: #ffffff !important;
+}
+
+html.dark-theme .super-admin-orders-header p {
+  color: #bdbdbd !important;
+}
+
+
+/* ORDER CARD */
+
+html.dark-theme .super-admin-order-card {
+  background: #242424 !important;
+  border-color: #3a3a3a !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35) !important;
+}
+
+
+/* ORDER HEADER */
+
+html.dark-theme .super-admin-order-header {
+  border-bottom-color: #3a3a3a !important;
+}
+
+html.dark-theme .super-admin-order-header h2 {
+  color: #ffffff !important;
+}
+
+html.dark-theme .super-admin-order-id {
+  color: #9ca3af !important;
+}
+
+
+/* STATUS */
+
+html.dark-theme .super-admin-order-status {
+  background: #3b2f1f !important;
+  color: #fbbf24 !important;
+}
+
+
+/* DETAILS */
+
+html.dark-theme .super-admin-order-section {
+  background: #1e1e1e !important;
+}
+
+html.dark-theme .super-admin-order-section h3 {
+  color: #ffffff !important;
+}
+
+html.dark-theme .super-admin-order-section p {
+  color: #bdbdbd !important;
+}
+
+html.dark-theme .super-admin-order-section strong {
+  color: #ffffff !important;
+}
+
+
+/* PRODUCTS */
+
+html.dark-theme .super-admin-order-products h3 {
+  color: #ffffff !important;
+}
+
+html.dark-theme .super-admin-product {
+  background: #1e1e1e !important;
+}
+
+html.dark-theme .super-admin-product-info h4 {
+  color: #ffffff !important;
+}
+
+html.dark-theme .super-admin-product-info p {
+  color: #9ca3af !important;
+}
+
+
+/* FOOTER */
+
+html.dark-theme .super-admin-order-footer {
+  border-top-color: #3a3a3a !important;
+}
+
+html.dark-theme .super-admin-order-total {
+  color: #ffffff !important;
+}
+
+html.dark-theme .super-admin-order-date {
+  color: #9ca3af !important;
+}
+
+
+/* NO ORDERS */
+
+html.dark-theme .super-admin-no-orders {
+  background: #242424 !important;
+  color: #bdbdbd !important;
+  border-color: #3a3a3a !important;
+}
+/* =====================================================
+   SUPER ADMIN CUSTOMERS - THEME
+===================================================== */
+
+/* =========================
+   LIGHT THEME
+========================= */
+
+html.light-theme .super-admin-customer-card {
+  background: #ffffff;
+  border-color: #e5e7eb;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+html.light-theme .super-admin-customer-card h3 {
+  color: #1f2937;
+}
+
+html.light-theme .super-admin-customer-card p {
+  color: #4b5563;
+}
+
+html.light-theme .super-admin-customer-card strong {
+  color: #111827;
+}
+
+html.light-theme .super-admin-main-content h1 {
+  color: #111827;
+}
+
+html.light-theme .super-admin-main-content h2 {
+  color: #374151;
+}
+
+
+/* =========================
+   DARK THEME
+========================= */
+
+html.dark-theme .super-admin-customer-card {
+  background: #242424 !important;
+  border-color: #3a3a3a !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35) !important;
+}
+
+html.dark-theme .super-admin-customer-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45) !important;
+}
+
+html.dark-theme .super-admin-customer-card h3 {
+  color: #ffffff !important;
+}
+
+html.dark-theme .super-admin-customer-card p {
+  color: #bdbdbd !important;
+}
+
+html.dark-theme .super-admin-customer-card strong {
+  color: #ffffff !important;
+}
+
+html.dark-theme .super-admin-main-content h1 {
+  color: #ffffff !important;
+}
+
+html.dark-theme .super-admin-main-content h2 {
+  color: #e5e7eb !important;
+}
+/* =====================================================
+   SUPER ADMIN REPORTS - THEME
+===================================================== */
+
+
+/* =========================
+   LIGHT THEME
+========================= */
+
+html.light-theme .super-admin-reports-container {
+  background: #f5f7fb;
+  color: #111827;
+}
+
+html.light-theme .reports-subtitle {
+  color: #666666;
+}
+
+html.light-theme .report-card {
+  background: #ffffff;
+  border-color: #eeeeee;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+html.light-theme .report-card h3 {
+  color: #666666;
+}
+
+html.light-theme .report-card h2 {
+  color: #111827;
+}
+
+html.light-theme .order-status-card {
+  background: #ffffff;
+  border-color: #eeeeee;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+html.light-theme .order-status-card h2 {
+  color: #111827;
+}
+
+html.light-theme .status-row {
+  border-bottom-color: #eeeeee;
+}
+
+html.light-theme .status-name {
+  color: #444444;
+}
+
+html.light-theme .status-count {
+  color: #111827;
+}
+
+
+/* =========================
+   DARK THEME
+========================= */
+
+html.dark-theme .super-admin-reports-container {
+  background: #121212 !important;
+  color: #ffffff !important;
+}
+
+html.dark-theme .reports-subtitle {
+  color: #bdbdbd !important;
+}
+
+
+/* SUMMARY CARDS */
+
+html.dark-theme .report-card {
+  background: #242424 !important;
+  border-color: #3a3a3a !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35) !important;
+}
+
+html.dark-theme .report-card h3 {
+  color: #bdbdbd !important;
+}
+
+html.dark-theme .report-card h2 {
+  color: #ffffff !important;
+}
+
+
+/* ORDER STATUS CARD */
+
+html.dark-theme .order-status-card {
+  background: #242424 !important;
+  border-color: #3a3a3a !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35) !important;
+}
+
+html.dark-theme .order-status-card h2 {
+  color: #ffffff !important;
+}
+
+
+/* STATUS ROW */
+
+html.dark-theme .status-row {
+  border-bottom-color: #3a3a3a !important;
+}
+
+html.dark-theme .status-name {
+  color: #d1d5db !important;
+}
+
+html.dark-theme .status-count {
+  color: #ffffff !important;
+}
+/* =====================================================
+   NAVBAR - SHOPEASE LOGO
+===================================================== */
+
+/* LIGHT THEME */
+
+html.light-theme .main-header .navbar-logo {
+  color: #111827 !important;
+}
+
+html.light-theme .main-header .navbar-logo:hover {
+  color: #111827 !important;
+}
+
+
+/* DARK THEME */
+
+html.dark-theme .main-header .navbar-logo {
+  color:blue !important;
+}
+
+html.dark-theme .main-header .navbar-logo:hover {
+  color: #ffffff !important;
+}
+
+
+/* ShopEase text inside the logo */
+
+html.dark-theme .main-header .navbar-logo span {
+  color: #ffffff !important;
+}
+
+html.light-theme .main-header .navbar-logo span {
+  color: #111827 !important;
+}
+
+
+/* Keep shopping bag visible */
+
+html.dark-theme .main-header .navbar-logo .logo-icon {
+  color: #ffffff !important;
+}
+
+html.light-theme .main-header .navbar-logo .logo-icon {
+  color: #111827 !important;
+}
+/* =====================================================
+   MAIN NAVBAR - LIGHT / DARK THEME
+===================================================== */
+
+
+/* =========================
+   LIGHT THEME
+========================= */
+
+html.light-theme .main-header {
+  background: rgba(255, 255, 255, 0.96) !important;
+  border-bottom-color: #e5e7eb !important;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06) !important;
+}
+
+html.light-theme .main-header .navbar-logo {
+  color: #172033 !important;
+}
+
+html.light-theme .main-header .navbar-logo:hover {
+  color: #2563eb !important;
+}
+
+
+/* =========================
+   DARK THEME
+========================= */
+
+html.dark-theme .main-header {
+  background: #1e1e1e !important;
+  border-bottom-color: #333333 !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35) !important;
+}
+
+html.dark-theme .main-header .navbar-logo {
+  color: #ffffff !important;
+}
+
+html.dark-theme .main-header .navbar-logo:hover {
+  color: #60a5fa !important;
+}
+
+
+/* SHOPEASE TEXT */
+
+html.dark-theme .main-header .navbar-logo span {
+  color: #ffffff !important;
+}
+
+html.light-theme .main-header .navbar-logo span {
+  color: #172033 !important;
+}
+
+
+/* SHOPPING BAG ICON */
+
+html.dark-theme .main-header .logo-icon {
+  color: #ffffff !important;
+}
+
+
+/* NAVIGATION LINKS */
+
+html.dark-theme .main-header .navbar-menu a {
+  color: #d1d5db !important;
+}
+
+html.dark-theme .main-header .navbar-menu a:hover {
+  color: #ffffff !important;
+  background: #2a2a2a !important;
+}
+
+
+/* LOGOUT */
+
+html.dark-theme .main-header .navbar-logout {
+  background: #2a2a2a !important;
+  color: #d1d5db !important;
+}
+
+html.dark-theme .main-header .navbar-logout:hover {
+  background: #3b2024 !important;
+  color: #fca5a5 !important;
+}
+
+
+/* MOBILE MENU */
+
+html.dark-theme .main-header .navbar-menu {
+  background: #1e1e1e !important;
+  border-color: #3a3a3a !important;
+}
+
+
+/* MOBILE TOGGLE */
+
+html.dark-theme .main-header .navbar-toggle {
+  background: #242424 !important;
+  border-color: #3a3a3a !important;
+  color: #ffffff !important;
+}

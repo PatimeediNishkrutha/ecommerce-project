@@ -1,0 +1,137 @@
+.edit-product-page {
+  min-height: 100vh;
+  background: #f4f6f9;
+}
+
+.edit-product-content {
+  margin-left: 250px;
+  min-height: 100vh;
+  padding: 35px;
+  box-sizing: border-box;
+}
+
+.edit-product-header {
+  margin-bottom: 25px;
+}
+
+.edit-product-header h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  color: #111827;
+}
+
+.edit-product-header p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.edit-product-card {
+  max-width: 700px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.edit-product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.edit-product-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.edit-product-input-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.edit-product-input-group input,
+.edit-product-input-group textarea {
+  width: 100%;
+  padding: 13px 14px;
+  box-sizing: border-box;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  font-family: inherit;
+}
+
+.edit-product-input-group textarea {
+  resize: vertical;
+}
+
+.edit-product-input-group input:focus,
+.edit-product-input-group textarea:focus {
+  border-color: #111827;
+  box-shadow: 0 0 0 3px rgba(17, 24, 39, 0.08);
+}
+
+.edit-product-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.edit-product-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.cancel-product-button,
+.save-product-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cancel-product-button {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.save-product-button {
+  background: #111827;
+  color: #ffffff;
+}
+
+.cancel-product-button:hover {
+  background: #d1d5db;
+}
+
+.save-product-button:hover {
+  background: #374151;
+}
+
+@media (max-width: 768px) {
+  .edit-product-content {
+    margin-left: 220px;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .edit-product-content {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .edit-product-row {
+    grid-template-columns: 1fr;
+  }
+
+  .edit-product-actions {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,165 @@
+/* =====================================================
+   SUPER ADMIN LOGIN PAGE
+===================================================== */
+
+.super-admin-login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f4f7fb, #e8eef7);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* =====================================================
+   LOGIN CARD
+===================================================== */
+
+.super-admin-login-card {
+  width: 100%;
+  max-width: 430px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.super-admin-login-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.super-admin-icon {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111827;
+  color: #ffffff;
+  font-size: 28px;
+}
+
+.super-admin-login-header h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.super-admin-login-header p {
+  margin-top: 8px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.super-admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* =====================================================
+   INPUT GROUP
+===================================================== */
+
+.super-admin-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.super-admin-input-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.super-admin-input-group input {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 9px;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+  transition: 0.2s ease;
+}
+
+.super-admin-input-group input:focus {
+  border-color: #111827;
+  box-shadow: 0 0 0 3px rgba(17, 24, 39, 0.08);
+}
+
+/* =====================================================
+   LOGIN BUTTON
+===================================================== */
+
+.super-admin-login-button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 9px;
+  background: #111827;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.super-admin-login-button:hover {
+  background: #1f2937;
+  transform: translateY(-1px);
+}
+
+.super-admin-login-button:active {
+  transform: translateY(0);
+}
+
+/* =====================================================
+   MESSAGE
+===================================================== */
+
+.super-admin-message {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #dc2626;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 500px) {
+  .super-admin-login-card {
+    padding: 30px 22px;
+  }
+
+  .super-admin-login-header h2 {
+    font-size: 24px;
+  }
+}
+/* ==========================================
+   SUPER ADMIN THEME TOGGLE
+========================================== */
+
+.super-admin-theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  z-index: 9999;
+}

@@ -1,0 +1,45 @@
+/* =====================================================
+   SUPER ADMIN CUSTOMERS PAGE
+===================================================== */
+
+.super-admin-customer-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 22px;
+  margin-top: 20px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transition: 0.2s ease;
+}
+
+.super-admin-customer-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.super-admin-customer-card h3 {
+  margin: 0 0 15px;
+  font-size: 21px;
+  color: #1f2937;
+}
+
+.super-admin-customer-card p {
+  margin: 9px 0;
+  font-size: 15px;
+  color: #4b5563;
+}
+
+.super-admin-customer-card strong {
+  color: #111827;
+}
+
+.super-admin-main-content h1 {
+  margin-bottom: 8px;
+}
+
+.super-admin-main-content h2 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #374151;
+}
