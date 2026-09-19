@@ -45,11 +45,11 @@ function AdminDashboard() {
   // LOAD DASHBOARD
   // ======================================================
 
-  useEffect(() => {
-    fetchOrders();
-    fetchProducts();
-  }, []);
-
+ useEffect(() => {
+  fetchOrders();
+  fetchProducts();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+}, []);
   // ======================================================
   // FETCH ORDERS
   // ======================================================

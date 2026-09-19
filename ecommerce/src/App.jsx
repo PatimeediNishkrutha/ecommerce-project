@@ -41,7 +41,7 @@ import ManageAdmins from "./superadmin/ManageAdmins";
 import AddAdmin from "./superadmin/AddAdmin";
 import EditAdmin from "./superadmin/EditAdmin";
 import AllProducts from "./superadmin/AllProducts";
-import  SuperAdminEditProduct from "./superadmin/EditProduct";
+// import  SuperAdminEditProduct from "./superadmin/EditProduct";
 import SuperAdminOrders from "./superadmin/SuperAdminOrders";
 import SuperAdminCustomers from "./superadmin/SuperAdminCustomers";
 import SuperAdminReports from "./superadmin/SuperAdminReports";

@@ -9,7 +9,7 @@ import ReceiptLongTwoToneIcon from "@mui/icons-material/ReceiptLongTwoTone";
 import PaymentsRoundedIcon from "@mui/icons-material/PaymentsRounded";
 import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
-import Typography from "@mui/material/Typography";
+// import Typography from "@mui/material/Typography";
 function SuperAdminSidebar() {
   return (
     <aside className="super-admin-sidebar">

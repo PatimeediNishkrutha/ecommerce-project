@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+
 import SuperAdminSidebar from "./SuperAdminSidebar";
 import "./AddAdmin.css";
 
 function AddAdmin() {
-  const navigate = useNavigate();
+
 
   const [formData, setFormData] = useState({
     name: "",
