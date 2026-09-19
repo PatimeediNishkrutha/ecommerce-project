@@ -30,7 +30,7 @@ const cartSlice = createSlice({
         state.items.push({
           ...product,
           id: product.id || product._id,
-          quantity: 2,
+          quantity: 1,
         });
       }
     },
