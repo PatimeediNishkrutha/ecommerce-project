@@ -4,9 +4,6 @@
 name: Node.js CI
 
 on:
- name: Ecommerce CI
-
-on:
   push:
     branches: ["main"]
   pull_request:
@@ -38,5 +35,3 @@ jobs:
       - name: Build frontend
         working-directory: ecommerce
         run: npm run build
-
-    
