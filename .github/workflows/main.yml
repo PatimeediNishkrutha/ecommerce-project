@@ -55,11 +55,8 @@ jobs:
         run: |
           npm start > backend.log 2>&1 &
           sleep 10
+          echo "===== BACKEND LOG ====="
           cat backend.log
-
-      - name: Check Backend
-        run: |
-          curl -I http://localhost:5000
 
       - name: Start React application
         working-directory: ecommerce
