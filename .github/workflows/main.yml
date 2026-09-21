@@ -23,8 +23,12 @@ jobs:
           cache: npm
           cache-dependency-path: ecommerce/package-lock.json
 
-      - name: Install dependencies
+      - name: Install frontend dependencies
         working-directory: ecommerce
+        run: npm ci
+
+      - name: Install backend dependencies
+        working-directory: ebackend
         run: npm ci
 
       - name: Run tests
@@ -46,13 +50,19 @@ jobs:
           Xvfb :99 -screen 0 1920x1080x24 &
           echo "DISPLAY=:99" >> $GITHUB_ENV
 
+      - name: Start Backend
+        working-directory: ebackend
+        run: npm start &
+
       - name: Start React application
         working-directory: ecommerce
         run: npm start &
+
       - name: Check React application
         run: |
           sleep 10
           curl -I http://localhost:3000
+
       - name: Run Selenium Login Test
         working-directory: ecommerce
         run: node selenium-tests/login.test.js
