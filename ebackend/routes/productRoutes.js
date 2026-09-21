@@ -7,7 +7,7 @@ const router = express.Router();
 // =====================================================
 
 const productController =
-  require("../controller/productController");
+ require("../Controller/productController")
 
 // =====================================================
 // IMPORT AUTH MIDDLEWARE
