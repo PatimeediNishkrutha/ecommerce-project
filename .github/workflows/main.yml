@@ -52,11 +52,13 @@ jobs:
 
       - name: Start Backend
         working-directory: ebackend
-        run: npm start &
-     
+        run: |
+          npm start > backend.log 2>&1 &
+          sleep 10
+          cat backend.log
+
       - name: Check Backend
         run: |
-          sleep 10
           curl -I http://localhost:5000
 
       - name: Start React application
