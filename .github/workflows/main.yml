@@ -34,3 +34,14 @@ jobs:
       - name: Build application
         working-directory: ecommerce
         run: npm run build
+
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@v1
+
+      - name: Start React application
+        working-directory: ecommerce
+        run: npm start &
+
+      - name: Run Selenium Login Test
+        working-directory: ecommerce
+        run: node selenium-tests/login.test.js
