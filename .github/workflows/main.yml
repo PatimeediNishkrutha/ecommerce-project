@@ -50,6 +50,10 @@ jobs:
         working-directory: ecommerce
         run: npm start &
 
-      - name: Run Selenium Login Test
+            - name: Run Selenium Login Test
         working-directory: ecommerce
         run: node selenium-tests/login.test.js
+
+      - name: Run Selenium Cart Test
+        working-directory: ecommerce
+        run: node selenium-tests/cart.test.js
