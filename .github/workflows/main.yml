@@ -52,11 +52,13 @@ jobs:
 
       - name: Start Backend
         working-directory: ebackend
-        run: |
-          npm start > backend.log 2>&1 &
-          sleep 10
-          echo "===== BACKEND LOG ====="
-          cat backend.log
+        env:
+         MONGO_URI: ${{ secrets.MONGO_URI }}
+         run: |
+         npm start > backend.log 2>&1 &
+        sleep 10
+         echo "===== BACKEND LOG ====="
+         cat backend.log
 
       - name: Start React application
         working-directory: ecommerce
