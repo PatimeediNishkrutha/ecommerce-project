@@ -49,7 +49,10 @@ jobs:
       - name: Start React application
         working-directory: ecommerce
         run: npm start &
-
+      - name: Check React application
+        run: |
+          sleep 10
+          curl -I http://localhost:3000
       - name: Run Selenium Login Test
         working-directory: ecommerce
         run: node selenium-tests/login.test.js
