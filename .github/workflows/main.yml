@@ -53,6 +53,11 @@ jobs:
       - name: Start Backend
         working-directory: ebackend
         run: npm start &
+     
+      - name: Check Backend
+        run: |
+          sleep 10
+          curl -I http://localhost:5000
 
       - name: Start React application
         working-directory: ecommerce
